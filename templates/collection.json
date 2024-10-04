@@ -50,57 +50,9 @@
         "padding_top": "no-indent",
         "padding_bottom": "m"
       }
-    },
-    "rich_text_RyMhaP": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_FtHRBj": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Subheading"
-          }
-        },
-        "heading_mFFc3x": {
-          "type": "heading",
-          "settings": {
-            "heading": "Heading for your section",
-            "heading_size": "medium"
-          }
-        },
-        "text_9VEw68": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Description for your section.</p>"
-          }
-        },
-        "button_DgEGit": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_FtHRBj",
-        "heading_mFFc3x",
-        "text_9VEw68",
-        "button_DgEGit"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "full_width": true,
-        "alignment": "center",
-        "margin_top": "no-indent",
-        "margin_bottom": "no-indent",
-        "padding_top": "m",
-        "padding_bottom": "m"
-      }
     }
   },
   "order": [
-    "rich_text_RyMhaP",
     "banner",
     "product-grid"
   ]
