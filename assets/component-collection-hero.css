@@ -7,7 +7,7 @@
   flex-direction: column;
   position: relative;
   padding: 1.6rem 0;
-  background-color: #e7e7e7;
+  
 }
 @media screen and (min-width: 1200px) {
   .collection-hero__wrapper--overlay {
@@ -22,7 +22,7 @@
 .collection-hero__wrapper--overlay .collection-hero__overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(var(--color-overlay), 0.3);
+
   z-index: 1;
 }
 .collection-hero__wrapper--overlay .collection-hero__inner {
@@ -81,9 +81,7 @@
 .collection-hero--dark .collection-hero__description {
   color: rgb(var(--color-foreground-secondary));
 }
-.collection-hero--dark .collection-hero__wrapper--overlay::before {
-  background-color: rgba(255, 255, 255, 0.7);
-}
+
 .collection-hero__inner {
   display: flex;
   flex-direction: column;
@@ -127,3 +125,4 @@
   align-self: stretch;
   min-height: 38.4rem;
 }
+
