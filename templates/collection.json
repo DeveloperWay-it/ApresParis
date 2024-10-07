@@ -29,7 +29,6 @@
         ".price {display: none;}",
         ".card-information {display: none;}",
         "img {width: 280px; margin: 1px;}",
-        "img {margin: 50px !important;}"
       ],
       "settings": {
         "products_per_page": 45,
@@ -38,10 +37,14 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_collection": false,
-        "show_desc": false,
+        "show_desc": true,
         "enable_filtering": false,
         "filter_type": "vertical",
+        "default_open": true,
         "enable_sorting": false,
+        "image_filter_ratio": "4/5",
+        "image_filter_fit": "cover",
+        "image_filter_columns": 2,
         "columns_mobile": "2",
         "padding_top": "no-indent",
         "padding_bottom": "m"
