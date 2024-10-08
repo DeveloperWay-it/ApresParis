@@ -75,6 +75,8 @@
 
     transition: transform var(--duration-long) ease, opacity var(--duration-long) ease;
   }
+
+  
 }
 
 @media screen and (min-width: 1200px) {
