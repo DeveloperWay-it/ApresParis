@@ -22,7 +22,6 @@
 .collection-hero__wrapper--overlay .collection-hero__overlay {
   position: absolute;
   inset: 0;
-
   z-index: 1;
 }
 .collection-hero__wrapper--overlay .collection-hero__inner {
@@ -89,15 +88,45 @@
 .collection-hero__text-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 1.6rem;
 }
+
+.collection-hero .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .collection-hero .wrapper {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .collection-hero .wrapper {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .collection-hero .wrapper {
+    width: 35%;
+  }
+}
+
 .collection-hero__title {
   margin: 0;
+  font-weight: bold;
+  font-size: 14px;
   margin-top: 3.2rem;
+  text-transform: uppercase;
 }
 .collection-hero__description {
-  max-width: 38rem;
+  font-size: 14px;
   color: rgb(var(--color-foreground-secondary));
 }
 .collection-hero__description.rte img, .collection-hero__description.rte blockquote {

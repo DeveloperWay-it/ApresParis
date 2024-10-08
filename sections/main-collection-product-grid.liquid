@@ -158,7 +158,17 @@
                     section_id: section.id,
                     add_id: forloop.index
                   %}
+                  {% if section.settings.show_product_info == true %}
+                  <div class="product-info">  
+                    <p class="collection-title">{{ collection.title}}</p>                
+                    <p class="product-title">{{ product.title }}</p>  
+                    <p class="product-price">{{ product.price | money }}</p>  
+                   
+                  </div>
+                  {% endif %}
                 </li>
+             
+                
               {%- endfor -%}
             </ul>
 
@@ -198,7 +208,7 @@
   "tag": "section",
   "class": "collection-grid-section",
   "settings": [
-    {
+  {
       "type": "range",
       "id": "products_per_page",
       "min": 3,
@@ -253,6 +263,12 @@
       "default": true,
       "label": "t:sections.main-collection-product-grid.settings.show_secondary_image.label"
     },
+    {
+			"type": "checkbox",
+			"id": "show_product_info",
+			"default": true,
+			"label": "Show product info (price name and description)"
+		},  
     {
       "type": "checkbox",
       "id": "show_vendor",
@@ -369,22 +385,7 @@
       "type": "header",
       "content": "t:sections.main-collection-product-grid.settings.header_mobile.content"
     },
-    {
-      "type": "select",
-      "id": "columns_mobile",
-      "default": "1",
-      "label": "t:sections.main-collection-product-grid.settings.columns_mobile.label",
-      "options": [
-        {
-          "value": "1",
-          "label": "t:sections.main-collection-product-grid.settings.columns_mobile.options__1.label"
-        },
-        {
-          "value": "2",
-          "label": "t:sections.main-collection-product-grid.settings.columns_mobile.options__2.label"
-        }
-      ]
-    },
+
     {
       "type": "header",
       "content": "t:sections.all.section-padding.header.content"

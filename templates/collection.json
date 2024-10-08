@@ -25,7 +25,6 @@
       "type": "main-collection-product-grid",
       "custom_css": [
         ".h5 {display: none;}",
-        ".price {display: none;}",
         "img {width: 280px; margin: 1px;}"
       ],
       "settings": {
@@ -33,9 +32,10 @@
         "image_ratio": "portrait",
         "image_fit": "cover",
         "show_secondary_image": true,
+        "show_product_info": true,
         "show_vendor": false,
         "show_collection": false,
-        "show_desc": true,
+        "show_desc": false,
         "enable_filtering": false,
         "filter_type": "vertical",
         "default_open": true,
@@ -43,7 +43,6 @@
         "image_filter_ratio": "4/5",
         "image_filter_fit": "cover",
         "image_filter_columns": 2,
-        "columns_mobile": "2",
         "padding_top": "no-indent",
         "padding_bottom": "m"
       }
