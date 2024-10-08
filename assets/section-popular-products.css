@@ -216,3 +216,7 @@
     order: 1;
   } 
 }
+
+.popular-products__item .card-wrapper{
+  height: 100%;
+}
