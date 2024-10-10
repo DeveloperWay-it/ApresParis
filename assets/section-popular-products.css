@@ -21,10 +21,7 @@
   overflow: hidden;
 }
 
-.popular-products__item{
-  width: 270px;
-  height: 439px;
-}
+
 
 .popular-products__item .card {
   height: 100%;
@@ -35,15 +32,39 @@
 }
 
 
+.popular-products__item{
+  width: 270px;
+  height: 439px;
+}
+
+
 @media screen and (max-width: 590px) {
   .popular-products__item{
     width: 100%;
   }
 }
 
+
+@media screen and (min-width: 300px) {
+  .popular-products__item{
+    height: 240px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .popular-products__item{
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .popular-products__item{
+    height: 439px;
+  }
+}
+
+
 @media screen and (min-width: 750px) {
-    
-    
   .popular-products__wrapper--4 .media {
     object-fit: cover;
   }
