@@ -5,12 +5,12 @@
 
   @media screen and (min-width: 990px) {
     .collection-hero__wrapper--overlay .collection-hero__overlay {
-      background-color: rgba(var(--color-overlay), {{ section.settings.opacity_overlay }} );
+     {% comment %} background-color: rgba(var(--color-overlay), {{ section.settings.opacity_overlay }} ); {%endcomment%}
     }
   }
 {%- endstyle -%}
 
-<div class="collection-hero color-{{ section.settings.color_scheme }} background">
+<div class="collection-hero  background">  {% comment %} color-{{ section.settings.color_scheme }} removed color scheme background{% endcomment %}
   <div class="collection-hero__wrapper collection-hero__wrapper--{{- section.settings.layout -}}">
     {% if section.settings.layout == 'overlay' %}
       <span class="collection-hero__overlay"></span>
@@ -31,6 +31,7 @@
     <div class="collection-hero__inner">
       <div class="container">
         <div class="collection-hero__text-wrapper">
+        <div class="wrapper">
           <h1 class="collection-hero__title title--page h2">
             <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
             {{- collection.title | escape -}}
@@ -40,6 +41,7 @@
               {{ collection.description }}
             </div>
           {%- endif -%}
+          </div>  
         </div>
       </div>
       {%- liquid

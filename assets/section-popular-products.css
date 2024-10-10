@@ -75,6 +75,8 @@
 
     transition: transform var(--duration-long) ease, opacity var(--duration-long) ease;
   }
+
+  
 }
 
 @media screen and (min-width: 1200px) {
@@ -215,4 +217,8 @@
   .popular-products--2-mobile .collection-product-card .price--on-sale .price__sale dt {
     order: 1;
   } 
+}
+
+.popular-products__item .card-wrapper{
+  height: 100%;
 }

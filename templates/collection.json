@@ -11,13 +11,12 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
-      "disabled": true,
       "settings": {
         "color_scheme": "",
         "layout": "overlay",
         "show_collection_description": true,
         "show_collection_image": true,
-        "opacity_overlay": 0.3,
+        "opacity_overlay": 1,
         "margin_top": "no-indent",
         "margin_bottom": "s"
       }
@@ -26,23 +25,24 @@
       "type": "main-collection-product-grid",
       "custom_css": [
         ".h5 {display: none;}",
-        ".price {display: none;}",
-        ".card-information {display: none;}",
-        "img {width: 280px; margin: 1px;}",
-        "img {margin: 50px !important;}"
+        "img {width: 280px; margin: 1px;}"
       ],
       "settings": {
         "products_per_page": 45,
         "image_ratio": "portrait",
         "image_fit": "cover",
         "show_secondary_image": true,
+        "show_product_info": true,
         "show_vendor": false,
         "show_collection": false,
         "show_desc": false,
         "enable_filtering": false,
         "filter_type": "vertical",
+        "default_open": true,
         "enable_sorting": false,
-        "columns_mobile": "2",
+        "image_filter_ratio": "4/5",
+        "image_filter_fit": "cover",
+        "image_filter_columns": 2,
         "padding_top": "no-indent",
         "padding_bottom": "m"
       }
