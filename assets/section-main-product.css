@@ -524,10 +524,9 @@
   font-size: 14px!important;
 }
 
-.product__description{
+.product__description p{
   display: flex;
   flex-direction: column;
-
 }
 .product-vendor {
   text-transform: uppercase;
