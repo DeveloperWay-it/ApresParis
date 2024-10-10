@@ -90,9 +90,9 @@
 
 									{% if section.settings.gallery_type != 'static_multicolumns_aside' and section.settings.gallery_type != 'static_column_aside' %}
 										{% if product.media.size > 1 %}
-											<div class="container product__pagination-wrapper">
+											{% comment %} <div class="container product__pagination-wrapper">
 												<div class="product__pagination swiper-pagination"></div>
-											</div>
+											</div> {% endcomment %}
 
 											<div class="product__slider-nav container no-js-hidden">
 												<div class="swiper-button-prev focus-inset">
@@ -1822,9 +1822,9 @@
 			</div>
 		</div>
 
-		<div class="container product__pagination-wrapper">
+		{% comment %} <div class="container product__pagination-wrapper">
 			<div class="product__pagination swiper-pagination"></div>
-		</div>
+		</div> {% endcomment %}
 
 		<div class="container product__slider-nav no-js-hidden">
 			<div class="swiper-button-prev focus-inset">
