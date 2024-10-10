@@ -918,14 +918,14 @@
 										</div>
 									{%- endif -%} {% endcomment %}
 								</div>
-								<div class="installment-wrapper" {{ block.shopify_attributes }}>
+								{% comment %} <div class="installment-wrapper" {{ block.shopify_attributes }}>
 									{%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
 									{%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
 										<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
 										{{ form | payment_terms }}
 									{%- endform -%}
 								</div>
-	
+	 {% endcomment %}
 							{%- when 'description' -%}
 								<div class="product__description {% if block.settings.description == blank and product.description != blank %} rte {% endif %}" {{ block.shopify_attributes }}>
 									{% if block.settings.description != blank %}
