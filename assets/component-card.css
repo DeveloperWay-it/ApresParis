@@ -8,7 +8,6 @@
   height: 100%;
   text-decoration: none;
   background-color: rgb(var(--color-background));
-  border-radius: 0.4rem;
   overflow: hidden;
 }
 @media screen and (min-width: 990px) {
