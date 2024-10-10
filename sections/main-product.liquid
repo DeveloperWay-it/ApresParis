@@ -283,7 +283,7 @@
 												{%- endif -%}
 											</div>
 										{%- endif -%}
-										{%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
+										{% comment %} {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
 											<div class="product__tax caption rte">
 												{%- if cart.taxes_included -%}
 													{{ 'products.product.include_taxes' | t }}
@@ -292,7 +292,7 @@
 													{{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
 												{%- endif -%}
 											</div>
-										{%- endif -%}
+										{%- endif -%} {% endcomment %}
 									</div>
 									<div class="installment-wrapper" {{ block.shopify_attributes }}>
 										{%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
@@ -905,7 +905,7 @@
 											{%- endif -%}
 										</div>
 									{%- endif -%}
-									{%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
+									{% comment %} {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
 										<div class="product__tax caption rte">
 											{%- if cart.taxes_included -%}
 												{{ 'products.product.include_taxes' | t }}
@@ -914,7 +914,7 @@
 												{{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
 											{%- endif -%}
 										</div>
-									{%- endif -%}
+									{%- endif -%} {% endcomment %}
 								</div>
 								<div class="installment-wrapper" {{ block.shopify_attributes }}>
 									{%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
