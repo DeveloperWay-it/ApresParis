@@ -14,11 +14,7 @@
     padding: 1.6rem 0;
   }
 }
-@media screen and (min-width: 990px) {
-  .collection-hero__wrapper--overlay {
-    min-height: 31.2rem;
-  }
-}
+
 .collection-hero__wrapper--overlay .collection-hero__overlay {
   position: absolute;
   inset: 0;
@@ -26,8 +22,8 @@
 }
 .collection-hero__wrapper--overlay .collection-hero__inner {
   padding: 3.2rem 0;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .collection-hero__wrapper--overlay .collection-hero__text-wrapper {
   position: relative;
