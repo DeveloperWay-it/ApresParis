@@ -908,6 +908,7 @@ main .shopify-section:first-child.not-margin .section--has-overlay:not(.article-
   [data-block-handle=reviews] .spr-form-input-textarea {
     min-height: 5.4rem;
     padding: 0rem 2.4rem;
+    padding: 0rem 2.4rem;
     font-size: 1.6rem;
   }
 }
