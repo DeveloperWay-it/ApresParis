@@ -33,7 +33,7 @@
         "image_fit": "cover",
         "show_secondary_image": true,
         "show_product_info": true,
-        "show_vendor": true,
+        "show_vendor": false,
         "show_collection": false,
         "show_desc": false,
         "enable_filtering": false,
