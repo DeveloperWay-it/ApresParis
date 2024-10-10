@@ -33,7 +33,7 @@
 
 <section id="MainProduct-{{ section.id }}" data-section="{{ section.id }}">
 	<div class="product {% if product.media.size > 0 %}row{% else %}product--no-media{% endif %}">
-		<div class="container">
+		{% comment %} <div class="container">
 			{% if settings.show_breadcrumbs %}
 			<nav class="breadcrumb breadcrumb__desktop" role="navigation" aria-label="breadcrumbs">
 				<a href="{{ routes.root_url }}" title="{{ 'general.breadcrumbs.home' | t }}">{{ 'general.breadcrumbs.home' | t}}</a>
@@ -48,7 +48,7 @@
 				<span>{{ product.title }}</span>
 			</nav>
 			{% endif %}
-		</div>
+		</div> {% endcomment %}
 		<div class="{% if section.settings.gallery_type != 'full_screen_top' and section.settings.gallery_type != 'multiple_top' %}container{% endif %} product__outer product__outer--{% if section.settings.columns_desktop == '2' and section.settings.gallery_type == 'full_screen_top' or section.settings.gallery_type == 'multiple_top' %}columns{% endif %} product__outer--{% if section.settings.gallery_type == 'full_screen_top' %}full-screen{% elsif section.settings.gallery_type == 'multiple_top' %}multiple-top{% elsif section.settings.gallery_type == 'single_aside' %}single-aside{% elsif section.settings.gallery_type == 'static_multicolumns_aside' %}static-multicolumns-aside{% elsif section.settings.gallery_type == 'thumbs_aside' %}thumbs-aside{% elsif section.settings.gallery_type == 'static_column_aside' %}static-column-aside{% endif %}
 			{% if section.settings.desktop_alignment == 'right' %}product__outer--desktop-order{% endif %}
 			{% if section.settings.mobile_alignment == 'after' %}product__outer--mobile-order{% endif %}"
@@ -222,7 +222,7 @@
 					<div class="product__info-column">
 						{%- for block in section.blocks -%}
 							{%- case block.type -%}
-								{%- when 'text' -%}
+								{% comment %} {%- when 'text' -%}
 									<div class="product__text" {{ block.shopify_attributes }}>
 										{% if block.settings.text != blank %}
 											{% if product.vendor == block.settings.text and settings.enable_vendor_link %}
@@ -231,9 +231,10 @@
 												{{ block.settings.text }}
 											{% endif %}
 										{% endif %}
-									</div>
+									</div> {% endcomment %}
 		
 								{%- when 'title' -%}
+									<p class="product-vendor">{{ product.vendor }}</p>
 									<div class="product__title__wrapper
 												{%- if product.available == false %} price--sold-out {% endif -%}
 												{%- if product.compare_at_price > product.price %} price--on-sale {% endif -%}"
@@ -833,18 +834,18 @@
 										</product-form>
 									</div>
 		
-								{% when 'text_with_icon' %}
+								{% comment %} {% when 'text_with_icon' %}
 									<div class="product__text-icon">
 										{% render 'icon-pack', icon: block.settings.icon %}
 										{{ block.settings.text }}
-									</div>
+									</div> {% endcomment %}
 								{%- endcase -%}
 						{%- endfor -%}
 					</div>
 				{% else %}
 					{%- for block in section.blocks -%}
 						{%- case block.type -%}
-							{%- when 'text' -%}
+							{% comment %} {%- when 'text' -%}
 								<div class="product__text" {{ block.shopify_attributes }}>
 									{% if block.settings.text != blank %}
 										{% if product.vendor == block.settings.text and settings.enable_vendor_link %}
@@ -854,14 +855,15 @@
 										{% endif %}
 									{% endif %}
 								</div>
-	
+	 {% endcomment %}
 							{%- when 'title' -%}
+								<p class="product-vendor">{{ product.vendor }}</p>
 								<div class="product__title__wrapper
 											{%- if product.available == false %} price--sold-out {% endif -%}
 											{%- if product.compare_at_price > product.price %} price--on-sale {% endif -%}"
 								>
 									<h2 class="product__title {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-										{{ product.title | escape }}
+										{{ product.title | escape }} 
 									</h2>
 								</div>
 
@@ -988,12 +990,12 @@
 													%}
 	
 													<fieldset class="product-form__controls product-form__controls--{% if settings.type_color_swatch == 'custom' and color_swatch %}colors{% endif %}" id="SingleOptionSelector-{{ forloop.index0 }}">
-														<legend class="product-form__group-name">
+														{% comment %} <legend class="product-form__group-name">
 															{{ option.name }}:
 															{% if settings.type_color_swatch == 'custom' and color_swatch %}
 																<span id="ColorName-{{ section.id }}">{{ option.selected_value }}</span>
 															{% endif %}
-														</legend>
+														</legend> {% endcomment %}
 														<div class="product-form__controls-group">
 															{% render 'product-variant-options', product: product, option: option, block: block %}
 														</div>

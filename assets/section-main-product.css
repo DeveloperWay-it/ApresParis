@@ -457,13 +457,28 @@
   align-items: flex-start;
   height: 100%;
   transition: var(--duration-default);
+  
 }
 .product__info-container > * {
   width: 100%;
 }
+
+@media (min-width: 750px) {
+  .product__info-container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .product__info-container {
+    width: 40%;
+  }
+}
+
 @media (min-width: 1200px) {
   .product__info-container > * {
     max-width: 59.2rem;
+    
   }
 }
 @media (min-width: 750px) {
@@ -472,6 +487,7 @@
   }
 }
 .product__title__wrapper {
+  
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -483,7 +499,42 @@
     margin-bottom: 1rem;
   }
 }
+
+.product-form__submit {
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 12px;
+}
+
+@media (min-width: 750px) {
+  .product-form__submit  {
+    margin-bottom: 1rem;
+    width: fit-content;
+  }
+}
+
+.price-wrapper .price .money {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.price-item--sale, .price-item--regular {
+  font-size: 14px!important;
+}
+
+.product__description{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.product-vendor {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0;
+}
 .product__title {
+  font-size: 14px;
   letter-spacing: -0.03em;
   word-break: break-word;
   margin-bottom: 0;
@@ -515,7 +566,7 @@
   opacity: 0.7;
 }
 .product__description {
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 1.5;
   color: rgb(var(--color-foreground));
   margin-bottom: 1.6rem;
@@ -523,7 +574,6 @@
 }
 @media (min-width: 750px) {
   .product__description {
-    font-size: 1.6rem;
     margin-bottom: 2.4rem;
   }
 }
@@ -1394,7 +1444,6 @@
 /* Product form */
 .product-form {
   display: block;
-  border-top: 0.1rem solid rgb(var(--color-border));
   padding-top: 2.4rem;
   margin-bottom: 1.6rem;
 }
@@ -1533,15 +1582,16 @@
 .product-form__quantity .quantity button[name=minus].disabled svg {
   color: rgb(var(--color-foreground), 0.6);
 }
-.product-form__checkout {
+.product-form__checkou {
   position: relative;
 }
-.product-form__submit {
+
+.product-form__buttons-row {
+  text-transform: uppercase;
   width: auto;
   min-height: 5.3rem;
   flex-grow: 1;
   font-size: 1.4rem;
-  text-transform: capitalize;
   position: relative;
   transition: var(--duration-default);
 }
