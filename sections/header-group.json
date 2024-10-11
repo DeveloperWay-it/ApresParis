@@ -1,1 +1,66 @@
-{"type":"header","name":"t:sections.header.settings.header-group.label","sections":{"announcement-bar":{"type":"announcement-bar","disabled":true,"settings":{"height":50,"height_mobile":40,"color_scheme":"","text":"For example, a test of the announcement of some news"}},"header":{"type":"header","settings":{"enable_border":false,"header_type":"left-logo","logo":"shopify:\/\/shop_images\/logo_apres_paris.png","logo_width":175,"menu":"main-menu-1","small_menu":"","enable_country_selector":true,"enable_language_selector":true,"enable_social":false,"sticky_header_type":"always","enable_search":true,"show_search_promo":false,"show_collection_card":true,"collection_list":[],"show_search_block":false,"search_color_scheme":"","search_subheading":"","search_heading":"","button_link":"","button_label":"","button_style":"secondary","overlay_opacity":0,"show_search_block_2":false,"search_color_scheme_2":"","search_subheading_2":"","search_heading_2":"Heading","button_link_2":"","button_label_2":"Button label","button_style_2":"primary","overlay_opacity_2":0}}},"order":["announcement-bar","header"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "t:sections.header.settings.header-group.label",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "disabled": true,
+      "settings": {
+        "height": 50,
+        "height_mobile": 40,
+        "color_scheme": "",
+        "text": "For example, a test of the announcement of some news"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "enable_border": false,
+        "header_type": "left-logo",
+        "logo": "shopify://shop_images/logo_1_png.png",
+        "logo_width": 135,
+        "menu": "main-menu-1",
+        "small_menu": "",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "enable_social": false,
+        "sticky_header_type": "always",
+        "enable_search": true,
+        "show_search_promo": false,
+        "show_collection_card": true,
+        "collection_list": [
+
+        ],
+        "show_search_block": false,
+        "search_color_scheme": "",
+        "search_subheading": "",
+        "search_heading": "",
+        "button_link": "",
+        "button_label": "",
+        "button_style": "secondary",
+        "overlay_opacity": 0,
+        "show_search_block_2": false,
+        "search_color_scheme_2": "",
+        "search_subheading_2": "",
+        "search_heading_2": "Heading",
+        "button_link_2": "",
+        "button_label_2": "Button label",
+        "button_style_2": "primary",
+        "overlay_opacity_2": 0
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}
