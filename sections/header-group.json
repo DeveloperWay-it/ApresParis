@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "header",
   "name": "t:sections.header.settings.header-group.label",
@@ -17,7 +26,7 @@
       "settings": {
         "enable_border": false,
         "header_type": "left-logo",
-        "logo": "shopify:\/\/shop_images\/logo_1_png.png",
+        "logo": "shopify://shop_images/logo_1_png.png",
         "logo_width": 135,
         "menu": "main-menu-1",
         "small_menu": "",
