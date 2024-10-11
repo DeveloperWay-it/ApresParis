@@ -78,12 +78,12 @@
           <li class="list-menu-item">
             <a
               href="{{ link.url }}"
-              class="header__menu-item list-menu__item link focus-inset {%- if link.active %} header__active-menu-item{% endif %}"
+              class="header__menu-item list-menu__item link focus-inset {%- if link.active %} header__active-menu-item{% endif %} lastitem"
               {% if link.current %}
               aria-current="page"
               {% endif %}
               aria-label="{{ link.title | escape }}">
-              <span title="{{ link.title | escape }}">
+              <span title="{{ link.title | escape }}" class="{%- if forloop.last -%}lastitem {% endif %}">
                 {{ link.title | escape }}
               </span>
             </a>
