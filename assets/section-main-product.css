@@ -1911,7 +1911,7 @@
   z-index: 2;
   height: 100%;
   width: 100%;
-  cursor: url('data:image/svg+xml,<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.9996 9.60001L23.9996 38.4M38.3996 24L9.59961 24" stroke="%23282828" stroke-width="2" stroke-linecap="round"/></svg>') 20 20, auto;
+  cursor: pointer;
 }
 
 .product-media-modal {
