@@ -1707,9 +1707,9 @@ details > * {
   flex: none;
   width: 4.4rem;
   height: 4.4rem;
-  background-color: rgb(var(--color-button-secondary));
+/*   background-color: rgb(var(--color-button-secondary)); */
   border-radius: 100%;
-  border: 0.1rem solid rgb(var(--color-border));
+/*   border: 0.1rem solid rgb(var(--color-border)); */
   transition: var(--duration-default);
 }
 @media screen and (min-width: 576px) {
