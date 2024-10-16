@@ -4162,8 +4162,8 @@ details[open] > .header__icon--menu .icon-hamburger {
   justify-content: space-between;
   height: auto;
   padding: 0.8rem 2.4rem;
-  font-size: inherit;
-  font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: 80;
   text-transform: none;
   transition: background var(--duration-default);
 }
