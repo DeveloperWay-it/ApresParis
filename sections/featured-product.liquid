@@ -237,7 +237,7 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'text' -%}
-            {% if section.settings.product_item != blank %}
+            {% comment %} {% if section.settings.product_item != blank %}
               <div class="product__text" {{ block.shopify_attributes }}>
                 {% if block.settings.text != blank %}
                   {% if product.vendor == block.settings.text and settings.enable_vendor_link %}
@@ -247,7 +247,7 @@
                   {% endif %}
                 {% endif %}
               </div>
-            {% endif %}
+            {% endif %} {% endcomment %}
 
           {%- when 'title' -%}
             <div
