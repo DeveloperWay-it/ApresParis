@@ -1344,6 +1344,19 @@ hr {
   background-color: transparent;
   transition: var(--duration-default);
 }
+
+.link--no-underline {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  box-shadow: none;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: rgb(var(--color-link));
+  background-color: transparent;
+  transition: var(--duration-default);
+  padding: 1.4rem;
+}
 @media screen and (min-width: 750px) {
   .link {
     font-size: 1.5rem;
@@ -3334,6 +3347,7 @@ body.body--hidden {
   justify-content: flex-end;
   flex: none;
   margin-left: auto;
+  margin-right: 2.5rem;
   width: auto;
   height: 100%;
 }
@@ -3371,13 +3385,13 @@ body.body--hidden {
     z-index: 3;
   }
 }
-.header__icons .header__localization:hover::after,
+/* .header__icons .header__localization:hover::after,
 .header__icons .header__scheme:hover::after,
 .header__icons .header__account:hover::after,
 .header__icons .header__cart:hover::after,
 .header__icons .header__icon--search:hover::after {
   background-color: rgb(var(--color-foreground));
-}
+} */
 .header__icons .header__localization::after {
   left: 0;
   right: 0;
@@ -4305,12 +4319,21 @@ details[open] > .header__icon--menu .icon-hamburger {
 }
 
 .cart-count-bubble {
-  position: absolute;
+  position: flex;
   top: 0;
-  right: 0.8rem;
-  flex: none;
-  font-size: 1.3rem;
+  /* right: 0.8rem; */
+  /* margin-left: 0.8 rem; */
+  font-size: 1.0rem;
   line-height: 1;
+  color: white; /* Cambia il colore del testo in bianco */
+  background-color: black; /* Sfondo nero per creare il cerchio */
+  border-radius: 50%; /* Trasforma lo sfondo in un cerchio */
+  padding: 0.5rem; /* Aggiungi padding per dare la dimensione del cerchio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
 }
 @media screen and (max-width: 1200px) {
   .cart-count-bubble {
