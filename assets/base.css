@@ -1356,6 +1356,7 @@ hr {
   background-color: transparent;
   transition: var(--duration-default);
   padding: 1.4rem;
+  white-space: nowrap;
 }
 @media screen and (min-width: 750px) {
   .link {
@@ -4213,6 +4214,48 @@ details[open] > .header__icon--menu .icon-hamburger {
   line-height: var(--font-body-line-height);
   color: rgb(var(--color-foreground));
 }
+
+.search__form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #000; /* Bordo nero */
+  padding: 0px;
+  width: 160px; /* Aggiusta la larghezza della barra di ricerca */
+}
+
+.search__input {
+  border: none;
+  padding: 0px;
+  font-size: 1.3rem;
+  font-weight: 80; /* Imposta la dimensione del font */
+  width: 100%; /* Rende il campo di ricerca flessibile */
+  background: transparent; /* Rimuove il background bianco */
+}
+
+.search__input:focus {
+  outline: none; /* Rimuove il bordo di focus */
+}
+
+.search__button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search__button svg {
+  width: 20px; /* Dimensione dell'icona di ricerca */
+  height: 20px;
+  fill: none; /* Rimuove il riempimento dell'icona */
+  stroke: #000; /* Colore del bordo dell'icona (nero) */
+}
+
+
 
 @keyframes animateMenuOpen {
   0% {
