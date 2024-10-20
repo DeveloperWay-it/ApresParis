@@ -16,7 +16,7 @@
 }
 
 .drawer.active .drawer__inner {
-  transform: translateX(0);
+  transform: translateY(6%);
 }
 
 .product-option__group {
@@ -81,11 +81,11 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 65.6rem;
+  width: 31rem;
   max-width: 100vw;
   height: 100%;
   background-color: rgb(var(--color-background));
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: transform var(--duration-default) ease;
 }
 .drawer__header {
@@ -94,11 +94,13 @@
 }
 .drawer__heading {
   margin: 0;
+  font-size: 14px
 }
 .drawer__close {
   position: absolute;
   top: 2.4rem;
   right: 2.4rem;
+  display: none
 }
 .drawer__footer {
   flex: 1;

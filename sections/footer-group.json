@@ -1,1 +1,38 @@
-{"type":"footer","name":"t:sections.footer.settings.footer-group.label","sections":{"footer":{"type":"footer","blocks":{"footer-0":{"type":"logo_info","settings":{"logo_width":90,"description":"Description"}},"footer-1":{"type":"link_list","settings":{"heading":"Quick links","menu":"footer","default_open":false}},"footer-2":{"type":"link_list","settings":{"heading":"Quick links","menu":"footer","default_open":false}},"footer-3":{"type":"link_list","settings":{"heading":"Quick links","menu":"footer","default_open":false}},"footer-4":{"type":"contacts","settings":{"description":"Information","contact_info":"<p>Description<\/p>"}},"footer-5":{"type":"subscribe","settings":{"heading":"Heading for subscribe form","text":"Description","additional_text":"Additional text","button_style":"secondary"}}},"block_order":["footer-0","footer-1","footer-2","footer-3","footer-4","footer-5"],"disabled":true,"settings":{"color_scheme":"background-3","show_border":false,"enable_country_selector":true,"enable_language_selector":true,"payment_enable":false,"show_social":false,"enable_copyright_date":true,"enable_copyright_shopname":true,"show_policy":false,"enable_follow_on_shop":true}}},"order":["footer"]}
+{
+  "type": "footer",
+  "name": "t:sections.footer.settings.footer-group.label",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-1": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer",
+            "default_open": false,
+            "company_info": "Diana Molin SRL - REA 428870 - P. IVA 05155980260 - VIA BARBERIA, 34 TREVISO (ITALIA)"
+          }
+        }
+      },
+      "block_order": [
+        "footer-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "show_border": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_social": false,
+        "enable_copyright_date": false,
+        "enable_copyright_shopname": false,
+        "show_policy": false,
+        "enable_follow_on_shop": true
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

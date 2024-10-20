@@ -165,6 +165,7 @@ details[open] > .menu-drawer__submenu {
 
 .menu-drawer__utility-links {
   padding: 3.2rem 2rem 1.6rem;
+  display: none;
 }
 
 .menu-drawer__account {

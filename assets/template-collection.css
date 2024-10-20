@@ -217,6 +217,10 @@
   }
 }
 @media screen and (max-width: 575px) {
+  .collection-product-list .collection-product-card .card {
+    height: auto;
+    height: 300px;
+  }
   .collection-product-list--2-mobile .collection-product-card .card-information__group {
     flex-direction: column;
     row-gap: 0.8rem;

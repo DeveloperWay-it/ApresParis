@@ -17,7 +17,7 @@
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'link_list' -%}
-                {%- if block.type == 'link_list' and block.settings.heading != blank -%}
+                {%- if block.type == 'link_list' -%}
                   <div class="accordion">
                     <details
                       {% if block.settings.default_open %}
@@ -49,7 +49,7 @@
                 {%- endif -%}
 
                 <div
-                  class="footer-block {% if block.type == 'link_list' and block.settings.heading != blank %}footer-block--menu{% endif %}"
+                  class="footer-block {% if block.type == 'link_list'%}footer-block--menu{% endif %}"
                   {{ block.shopify_attributes }}
                 >
                   {%- if block.settings.heading != blank -%}
@@ -58,7 +58,7 @@
                     </h2>
                   {%- endif -%}
 
-                  {%- if block.settings.menu != blank and block.settings.heading != blank -%}
+                  {%- if block.settings.menu != blank -%}
                     <ul class="footer-block__details-content list-unstyled">
                       {%- for link in block.settings.menu.links -%}
                         <li>
@@ -70,9 +70,18 @@
                           </a>
                         </li>
                       {%- endfor -%}
+                      <li>
+                          <div
+                            class="list-menu__item list-menu__item--link list-menu__item focus-inset"
+                          >
+                          {{ block.settings.company_info }}
+                          </div>
+                        </li>
                     </ul>
                   {%- endif -%}
                 </div>
+
+
               {%- when 'logo_info' -%}
                 <div
                   class="footer-block footer-block--logo"
@@ -735,6 +744,12 @@
           "id": "default_open",
           "default": false,
           "label": "t:sections.footer.blocks.link_list.settings.default_open.label"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "company_info",
+          "default": "Description",
+          "label": "t:sections.all.text.label"
         }
       ]
     },
