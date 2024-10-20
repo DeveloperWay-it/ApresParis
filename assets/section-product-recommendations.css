@@ -54,6 +54,10 @@
 }
 .product-recommendations__heading {
   margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 3.2rem;
+  text-transform: uppercase;
 }
 .product-recommendations .grid__item {
   padding-bottom: 0;
@@ -78,6 +82,11 @@
   }
 }
 @media screen and (max-width: 575px) {
+
+  .product-recommendations__list--2-mobile .collection-product-card .card {
+    height: auto;
+  }
+
   .product-recommendations__list--2-mobile .collection-product-card .card-information__group {
     flex-direction: column;
     row-gap: 0.8rem;

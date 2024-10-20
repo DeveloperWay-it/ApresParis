@@ -149,7 +149,7 @@
 }
 @media screen and (min-width: 576px) {
   .popular-products__wrapper--2, .popular-products__wrapper--3, .popular-products__wrapper--4 {
-    grid-template-columns: repeat(2, minmax(auto, 270px));
+    grid-template-columns: repeat(2, minmax(auto, 338px));
     grid-auto-rows: auto; 
     align-items: center;
     justify-content: center;
@@ -157,7 +157,7 @@
 }
 @media screen and (min-width: 1200px) {
   .popular-products__wrapper--3, .popular-products__wrapper--4 {
-    grid-template-columns: repeat(3, minmax(auto, 270px));
+    grid-template-columns: repeat(3, minmax(auto, 338px));
     grid-auto-rows: auto; 
     align-items: center;
     justify-content: center;
@@ -165,7 +165,7 @@
 }
 @media screen and (min-width: 1360px) {
   .popular-products__wrapper--4 {
-    grid-template-columns: repeat(4, minmax(auto, 270px));
+    grid-template-columns: repeat(4, minmax(auto, 338px));
     align-items: center;
     justify-content: center;
   }

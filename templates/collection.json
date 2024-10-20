@@ -16,7 +16,6 @@
       "type": "main-collection-product-grid",
       "custom_css": [
         ".h5 {display: none;}",
-        "img {width: 280px; margin: 1px;}"
       ],
       "settings": {
         "products_per_page": 45,
@@ -42,5 +41,5 @@
   "order": [
     "banner",
     "product-grid"
-  ]
+  ],
 }
