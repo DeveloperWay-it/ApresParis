@@ -3328,12 +3328,17 @@ body.body--hidden {
   display: none
   }
 }
+
 .header__heading {
   display: inline-flex;
   align-items: center;
   margin: 0;
   line-height: 0;
 }
+.menu-opening .header__heading {
+  display: none
+}
+
 .header__heading span {
   line-height: 1;
   text-transform: var(--font-header-menu-text-transform);
@@ -3375,6 +3380,10 @@ body.body--hidden {
   
     margin-left: 0;
     margin-right: 0;
+
+  }
+  .menu-opening .header__column {
+  display: none;
 
   }
 }
@@ -3456,6 +3465,12 @@ body.body--hidden {
   width: 4.4rem;
   height: 4.4rem;
   margin-left: -0.8rem;
+}
+@media screen and (min-width: 576px)
+{
+  .header__icon .icon {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header__icon--menu {
@@ -4240,7 +4255,9 @@ details[open] > .header__icon--menu .icon-hamburger {
   display: none;
 }
 
-
+.menu-drawer .search__form-container {
+  display: flex;
+}
 
 .search-bar {
   display: flex;
@@ -4250,6 +4267,11 @@ details[open] > .header__icon--menu .icon-hamburger {
   width: 160px; /* Aggiusta la larghezza della barra di ricerca */
 }
 
+.menu-drawer .search-bar {
+  border-bottom: none;
+  width: 100%;
+}
+
 .search__input {
   border: none;
   padding: 0px;
@@ -4257,6 +4279,9 @@ details[open] > .header__icon--menu .icon-hamburger {
   font-weight: 80; /* Imposta la dimensione del font */
   width: 100%; /* Rende il campo di ricerca flessibile */
   background: transparent; /* Rimuove il background bianco */
+}
+.menu-drawer .search__input {
+  font-size: 1.2rem;
 }
 
 .search__input:focus {

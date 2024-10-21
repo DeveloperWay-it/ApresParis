@@ -19,6 +19,30 @@
         <div class="menu-drawer__navigation-container">
           <nav class="menu-drawer__navigation">
             <ul class="menu-drawer__menu list-menu" role="list">
+              <li> <div class=" menu-drawer__menu-item list-menu__item link link--text focus-inset search__form-container">
+                <form
+                  action="/search"
+                  method="get"
+                  role="search"
+                  class="search__form header_search_form">
+                  <div class="search-bar">
+                    <input
+                      type="search"
+                      name="q"
+                      placeholder="SEARCH"
+                      aria-label="Search"
+                      class="search__input"
+                      autocomplete="off"
+                      >
+                    <button
+                      type="submit"
+                      aria-label="Search"
+                      class="search__button">
+                      {% render 'icon-search' %}
+                    </button>
+                  </div>
+                </form>
+              </div></li>
               {%- for link in section.settings.menu.links -%}
                 <li>
                   {%- if link.links != blank -%}
