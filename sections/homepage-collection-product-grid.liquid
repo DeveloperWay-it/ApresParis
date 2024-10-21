@@ -145,7 +145,7 @@
               </div>
             </div>
 
-            <ul id="product-grid" data-id="{{ section.id }}" class="collection-product-list 
+            <ul id="product-grid" data-id="{{ section.id }}" class="homepage-grid collection-product-list 
               collection-product-list--{{ section.settings.columns_mobile }}-mobile load-more-grid">
               {%- for product in collection.products limit: 1000-%}
                 <li class="collection-product-card {% if settings.quickview_hover %}quickview--hover{% endif %}">

@@ -1,1 +1,127 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"text","settings":{"text":"{{ product.vendor }}"}},"title":{"type":"title","settings":{"heading_size":"h3"}},"price":{"type":"price","settings":{}},"description":{"type":"description","settings":{"description":""}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"button"}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":false,"show_quantity":false,"show_gift_card_recipient":false}}},"block_order":["vendor","title","price","description","variant_picker","buy_buttons"],"custom_css":[],"settings":{"desktop_alignment":"left","mobile_alignment":"before","gallery_type":"full_screen_top","image_fit":"contain","image_fit_modal":"contain","enable_autoheight":false,"columns_desktop":"1"}},"product-recommendations":{"type":"product-recommendations","settings":{"color_scheme":"background-1","heading":"You May Also Like","heading_size":"h2","products_limit":6,"image_ratio":"portrait","image_fit":"cover","show_secondary_image":true,"show_vendor":true,"show_collection":true,"show_desc":false,"columns_mobile":"1","padding_top":"m","padding_bottom":"m"}}},"order":["main","product-recommendations"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "dropdown_information_y7dLNc": {
+          "type": "dropdown_information",
+          "settings": {
+            "accordion_type": "size_chart",
+            "characteristics": true,
+            "heading": "Guida alle taglie",
+            "description": "<p>100% polyester<\/p>",
+            "button_show": false,
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "dropdown_information_RedKHq": {
+          "type": "dropdown_information",
+          "settings": {
+            "accordion_type": "link",
+            "characteristics": false,
+            "heading": "Composizione",
+            "description": "<p>Some description<\/p>",
+            "button_show": true,
+            "button_label": "Button label",
+            "button_link": "shopify:\/\/policies\/shipping-policy"
+          }
+        },
+        "dropdown_information_pAD6km": {
+          "type": "dropdown_information",
+          "settings": {
+            "accordion_type": "description",
+            "characteristics": true,
+            "heading": "Spedizione e resi",
+            "description": "<p>Some description<\/p>",
+            "button_show": true,
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_quantity": false,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "description",
+        "variant_picker",
+        "dropdown_information_y7dLNc",
+        "dropdown_information_RedKHq",
+        "dropdown_information_pAD6km",
+        "buy_buttons"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "desktop_alignment": "left",
+        "mobile_alignment": "before",
+        "gallery_type": "full_screen_top",
+        "image_fit": "contain",
+        "image_fit_modal": "contain",
+        "enable_autoheight": false,
+        "columns_desktop": "1"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "background-1",
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "products_limit": 4,
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_collection": false,
+        "show_desc": false,
+        "columns_mobile": "2",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations"
+  ]
+}

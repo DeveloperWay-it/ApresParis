@@ -3099,6 +3099,12 @@ body.body--hidden {
   text-transform: var(--font-header-menu-text-transform);
   padding: 2.5rem;
 }
+
+@media screen and (max-width: 576px){
+  .header {
+   padding: 1rem 2.5rem;  
+  }
+}
 @media screen and (min-width: 1200px) {
   .header {
     display: flex;
@@ -3161,7 +3167,7 @@ body.body--hidden {
 }
 .header__localization .localization-selector + .disclosure__list {
   right: 0;
-  top: 100%;
+  top: 75%;
   bottom: auto;
   margin-top: 0;
   max-width: 25rem;
@@ -3306,9 +3312,20 @@ body.body--hidden {
   height: auto;
   object-fit: contain;
 }
+
+.header__icon,
+.header__icon span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (max-width: 576px) {
   .header__heading-logo {
     max-width: 12rem;
+  }
+  .header__icon .link--no-underline {
+  display: none
   }
 }
 .header__heading {
@@ -3353,6 +3370,14 @@ body.body--hidden {
   height: 100%;
 }
 
+@media screen and (max-width: 576px) {
+  .header__column {
+  
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+}
 .header__icons {
   display: flex;
   align-items: center;
@@ -3402,12 +3427,7 @@ body.body--hidden {
   right: 1.1rem;
 }
 
-.header__icon,
-.header__icon span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .header__icon span {
   height: 100%;
@@ -3529,7 +3549,7 @@ body.body--hidden {
 
 .header__account {
   position: relative;
-  display: none;
+  /* display: none; */
   align-items: center;
   position: relative;
   height: 100%;
@@ -4193,6 +4213,7 @@ details[open] > .header__icon--menu .icon-hamburger {
   width: 20rem;
   min-width: auto;
   left: auto;
+  top: 48px
 }
 .header__inline-menu li:hover > .header__submenu {
   opacity: 1;
@@ -4216,10 +4237,10 @@ details[open] > .header__icon--menu .icon-hamburger {
 }
 
 .search__form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
+
+
 
 .search-bar {
   display: flex;
@@ -4285,6 +4306,11 @@ details[open] > .header__icon--menu .icon-hamburger {
 @media screen and (min-width: 750px) {
   .overflow-hidden-mobile {
     overflow: auto;
+  }
+  .search__form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 990px) {

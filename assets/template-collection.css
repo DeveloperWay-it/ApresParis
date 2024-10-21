@@ -7,7 +7,7 @@
 }
 
 .collection-product-card .card {
-  height: 439px;
+  height: 480px;
   width: 100%;
 }
 .collection-product-card .card .card__inner {
@@ -88,30 +88,30 @@
 }
 @media screen and (min-width: 576px) {
   .products-grid_no-filter .collection-product-list .collection-product-card, .products-grid.full-width .collection-product-list .collection-product-card, .products-grid:only-child .collection-product-list .collection-product-card {
-      width: 270px;
+      width: 338px;
   }
 }
 @media screen and (min-width: 990px) {
   .products-grid_no-filter .collection-product-list .collection-product-card, .products-grid.full-width .collection-product-list .collection-product-card, .products-grid:only-child .collection-product-list .collection-product-card {
-    width: 270px;
+    width: 338px;
 
   }
 }
 @media screen and (min-width: 1200px) {
   .products-grid_no-filter .collection-product-list .collection-product-card, .products-grid.full-width .collection-product-list .collection-product-card, .products-grid:only-child .collection-product-list .collection-product-card {
-    width: 270px;
+    width: 338px;
 
   }
 }
 @media screen and (min-width: 750px) {
   .products-grid.full-width .collection-product-list .collection-product-card {
-    width: 270px;
+    width: 338px;
  
   }
 }
 @media screen and (min-width: 1200px) {
   .products-grid.full-width .collection-product-list .collection-product-card {
-    width: 270px;
+    width: 338px;
 
   }
 }
@@ -163,9 +163,11 @@
   gap: 4rem 0.8rem;;
 }
 
-
+.homepage-grid.collection-product-list {
+  gap: 0.8rem 0.8rem;
+}
   .collection-product-list {
-  grid-template-columns: repeat(2, minmax(auto, 270px));
+  grid-template-columns: repeat(2, minmax(auto, 338px));
   grid-auto-rows: auto; 
   align-items: center;
   justify-content: center;
@@ -174,7 +176,7 @@
 
 @media screen and (min-width: 1200px) {
   .collection-product-list {
-  grid-template-columns: repeat(3, minmax(auto, 270px));
+  grid-template-columns: repeat(3, minmax(auto, 338px));
   grid-auto-rows: auto; 
   align-items: center;
   justify-content: center;
@@ -183,7 +185,7 @@
 
 @media screen and (min-width: 1360px) {
   .collection-product-list {
-  grid-template-columns: repeat(4, minmax(auto, 270px));
+  grid-template-columns: repeat(4, minmax(auto, 338px));
   grid-auto-rows: auto; 
   align-items: center;
   justify-content: center;
@@ -215,6 +217,10 @@
   }
 }
 @media screen and (max-width: 575px) {
+  .collection-product-list .collection-product-card .card {
+    height: auto;
+    height: 300px;
+  }
   .collection-product-list--2-mobile .collection-product-card .card-information__group {
     flex-direction: column;
     row-gap: 0.8rem;

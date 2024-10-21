@@ -131,7 +131,9 @@
               name="q"
               placeholder="SEARCH"
               aria-label="Search"
-              class="search__input">
+              class="search__input"
+              autocomplete="off"
+              >
             <button
               type="submit"
               aria-label="Search"
@@ -169,7 +171,6 @@
                   </option>
                 {%- endfor -%}
               </select>
-              {% render 'icon-button-arrow' %}
             </div>
             <button class="button button--primary">
               {{ 'localization.update_language' | t }}
@@ -190,7 +191,6 @@
                   <span class="value">
                     {{- localization.language.iso_code | upcase }}
                   </span>
-                  {% render 'icon-button-arrow' -%}
                 </button>
                 <ul
                   id="HeaderLanguageList"
@@ -265,7 +265,6 @@
                   <span class="currency-country">
                     {{- localization.country.currency.iso_code }}
                   </span>
-                  {% render 'icon-button-arrow' %}
                 </button>
                 <ul
                   id="HeaderCountryList"
@@ -303,13 +302,14 @@
     {%- endif -%}
 
     {%- if shop.customer_accounts_enabled -%}
-      {% comment %} <details-disclosure class="header__account">{% endcomment %}
+      <details-disclosure class="header__account">
       <details>
         <summary
           class="header__icon header__icon--account link--text  header__icon--summary focus-inset modal__toggle"
           aria-haspopup="dialog"
           role="button">
           <span class="link--no-underline">LOGIN</span>
+          {% render 'icon-account' %}
         </summary>
         <div
           class="header__account-modal modal__toggle color-background-1"
@@ -350,7 +350,7 @@
           {%- endif -%}
         </div>
       </details>
-      {% comment %}</details-disclosure> {% endcomment %}
+      </details-disclosure>
     {%- endif -%}
 
     <div class="{% if request.page_type != 'cart' %}header__cart {% else %} header__cart--page{% endif %}">
