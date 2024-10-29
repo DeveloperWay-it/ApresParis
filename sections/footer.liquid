@@ -234,16 +234,15 @@
         </div>
       </div>
     {%- endif -%}
-  </div>
 
   {%- if section.settings.enable_country_selector
     or section.settings.enable_language_selector
     or section.settings.payment_enable
     or section.settings.show_social
   -%}
-    <div class="footer__content-middle">
+    {% comment %} <div class="footer__content-middle"> {% endcomment %}
       <div class="container">
-        <div class="footer__content-middle-container">
+        {% comment %} <div class="footer__content-middle-container"> {% endcomment %}
           <div class="footer__content-middle-main">
             {%- if section.settings.enable_country_selector or section.settings.enable_language_selector -%}
               <div
@@ -448,13 +447,24 @@
             {%- endif -%}
             {%- if section.settings.show_social -%}
               <div class="footer__column footer__column--social">
-                <span class="label">
-                  {{- 'sections.footer.social_placeholder' | t -}}
-                </span>
                 <ul
                   class="footer__list-social list-unstyled list-social"
                   role="list"
                 >
+                  <li class="list-social__item">
+                    <a
+                      href="newsletter"
+                      {% if settings.new_tab %}
+                        target="_blank"
+                      {% endif %}
+                      class="list-menu__item list-menu__item--link focus-inset"
+                      aria-describedby="a11y-external-message"
+                    >
+                      <span class="newsletter">
+                        NEWSLETTER
+                      </span>
+                    </a>
+                  </li>
                   {%- if settings.social_twitter_link != blank -%}
                     <li class="list-social__item">
                       <a
@@ -612,9 +622,9 @@
               </div>
             {%- endif -%}
           </div>
-        </div>
+        {% comment %} </div> {% endcomment %}
       </div>
-    </div>
+    {% comment %} </div> {% endcomment %}
   {% endif %}
 
   <div class="footer__content-bottom">
@@ -660,6 +670,8 @@
       </div>
     </div>
   </div>
+    </div>
+
 </footer>
 
 {% javascript %}
