@@ -19,12 +19,12 @@
         "image_filter_ratio": "4\/5",
         "image_filter_fit": "cover",
         "image_filter_columns": 4,
-        "padding_top": "no-indent",
+        "padding_top": "s",
         "padding_bottom": "m"
       }
     }
   },
   "order": [
     "homepage_collection_product_grid_qFE9Ay"
-  ],
+  ]
 }

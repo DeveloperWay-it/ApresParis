@@ -102,7 +102,7 @@ details[open] > .menu-drawer__submenu {
 
 
 .menu-drawer__menu .menu-drawer__menu-item {
-  font-size: 1.2rem;
+/*   font-size: 1.2rem; */
   color: rgb(var(--color-foreground));
   height: 67px;
   padding-top: 10px;
@@ -126,8 +126,11 @@ details[open] > .menu-drawer__submenu {
 
 .menu-drawer__inner-submenu .link {
   padding: 0.8rem 2rem;
-  font-size: 1.8rem;
-  color: rgba(var(--color-foreground), 0.6);
+  font-size: 1.3rem;
+  color: rgb(var(--color-foreground));
+  max-height: 30px;
+  border-top: none !important;
+  border-bottom: none !important;
 }
 
 .menu-drawer__inner-submenu li:first-child .link {

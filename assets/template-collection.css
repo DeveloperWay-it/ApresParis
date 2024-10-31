@@ -7,8 +7,9 @@
 }
 
 .collection-product-card .card {
-  height: 480px;
+  /* height: 480px; */
   width: 100%;
+  aspect-ratio: 0.7;
 }
 .collection-product-card .card .card__inner {
   height: 100%;
@@ -86,10 +87,11 @@
 .products-grid_no-filter, .products-grid.full-width, .products-grid:only-child {
   grid-column: span 2;
 }
-@media screen and (min-width: 576px) {
-  .products-grid_no-filter .collection-product-list .collection-product-card, .products-grid.full-width .collection-product-list .collection-product-card, .products-grid:only-child .collection-product-list .collection-product-card {
-      width: 338px;
-  }
+.products-grid_no-filter .collection-product-list .collection-product-card, .products-grid.full-width .collection-product-list .collection-product-card, .products-grid:only-child .collection-product-list .collection-product-card {
+  width: 100%;
+}
+/* @media screen and (min-width: 576px) {
+ 
 }
 @media screen and (min-width: 990px) {
   .products-grid_no-filter .collection-product-list .collection-product-card, .products-grid.full-width .collection-product-list .collection-product-card, .products-grid:only-child .collection-product-list .collection-product-card {
@@ -114,7 +116,7 @@
     width: 338px;
 
   }
-}
+} */
 
 .collection {
   position: relative;
@@ -160,11 +162,11 @@
 .collection-product-list {
   display: grid;
   flex-wrap: wrap;
-  gap: 4rem 0.8rem;;
+  gap: 4rem 1.4rem;
 }
 
 .homepage-grid.collection-product-list {
-  gap: 0.8rem 0.8rem;
+  gap: 1.4rem 1.4rem;
 }
   .collection-product-list {
   grid-template-columns: repeat(2, minmax(auto, 338px));
@@ -174,23 +176,23 @@
   }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .collection-product-list {
-  grid-template-columns: repeat(3, minmax(auto, 338px));
+  grid-template-columns: repeat(4, minmax(auto, 24%));
   grid-auto-rows: auto; 
   align-items: center;
   justify-content: center;
   }
 }
 
-@media screen and (min-width: 1360px) {
+/* @media screen and (min-width: 1360px) {
   .collection-product-list {
   grid-template-columns: repeat(4, minmax(auto, 338px));
   grid-auto-rows: auto; 
   align-items: center;
   justify-content: center;
   }
-}
+} */
 
 .collection-product-list .collection-product-card {
   height: 100%;

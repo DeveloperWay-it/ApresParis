@@ -2,6 +2,11 @@
   display: block;
   overflow: hidden;
 }
+
+.product-recommendations .media{
+  padding-bottom: 0 !important;
+}
+
 .product-recommendations__list {
   margin-top: 2.4rem;
   position: relative;
