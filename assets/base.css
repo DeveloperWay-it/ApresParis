@@ -1358,6 +1358,11 @@ hr {
   padding: 1.4rem;
   white-space: nowrap;
 }
+
+.newsletter {
+  font-size: 1.4rem;
+}
+
 @media screen and (min-width: 750px) {
   .link {
     font-size: 1.5rem;
