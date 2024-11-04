@@ -489,14 +489,12 @@
 
 											<div class="about__accordion-description">
 												{% if block.settings.characteristics %}
-													{%- if product.metafields.characteristics.name.value.size > 0 -%}
-														{%- for item in product.metafields.characteristics.name.value -%}
+													
 															<div class="about__row">
-																<span>{{ item }}</span>
-																<span>{{ product.metafields.characteristics.description.value[forloop.index0] }}</span>
+															
+																<span>{{ product.metafields["c_f "]["composition"].value }}</span>
 															</div>
-														{% endfor %}
-													{% endif %}
+													
 												{% else %}
 													{% if block.settings.description != blank %}
 														{{ block.settings.description }}
@@ -1447,14 +1445,12 @@
 										</div>
 										<div class="about__accordion-description">
 											{% if block.settings.characteristics %}
-												{%- if product.metafields.characteristics.name.value.size > 0 -%}
-													{%- for item in product.metafields.characteristics.name.value -%}
+												
 														<div class="about__row">
-															<span>{{ item }}</span>
-															<span>{{ product.metafields.characteristics.description.value[forloop.index0] }}</span>
+															<span>{{  product.metafields["c_f "]["composition"].value }}</span>
 														</div>
-													{% endfor %}
-												{% endif %}
+												
+											
 											{% else %}
 												{% if block.settings.description != blank %}
 													{{ block.settings.description }}
