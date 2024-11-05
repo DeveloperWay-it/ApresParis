@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -38,7 +47,7 @@
             "accordion_type": "size_chart",
             "characteristics": true,
             "heading": "Guida alle taglie",
-            "description": "<p>100% polyester<\/p>",
+            "description": "<p>100% polyester</p>",
             "button_show": false,
             "button_label": "Button label",
             "button_link": ""
@@ -49,11 +58,11 @@
           "settings": {
             "accordion_type": "link",
             "characteristics": false,
-            "heading": "Composizione",
-            "description": "<p>Some description<\/p>",
+            "heading": "Spedizione e Resi",
+            "description": "<p>Some description</p>",
             "button_show": true,
             "button_label": "Button label",
-            "button_link": "shopify:\/\/policies\/shipping-policy"
+            "button_link": "shopify://policies/shipping-policy"
           }
         },
         "dropdown_information_pAD6km": {
@@ -61,8 +70,8 @@
           "settings": {
             "accordion_type": "description",
             "characteristics": true,
-            "heading": "Spedizione e resi",
-            "description": "<p>Some description<\/p>",
+            "heading": "COMPOSIZIONE",
+            "description": "<p>Some description</p>",
             "button_show": true,
             "button_label": "Button label",
             "button_link": ""
@@ -111,6 +120,7 @@
         "image_ratio": "portrait",
         "image_fit": "cover",
         "show_secondary_image": true,
+        "show_product_info": true,
         "show_vendor": false,
         "show_collection": false,
         "show_desc": false,
