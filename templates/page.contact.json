@@ -19,6 +19,10 @@
     },
     "form": {
       "type": "contact-form",
+      "custom_css": [
+        "textarea, input {background: #fff;}",
+        ".button{background: #000; color: #fff}"
+      ],
       "settings": {
         "position": "right",
         "heading": "Contact form",
