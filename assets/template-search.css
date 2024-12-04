@@ -121,6 +121,10 @@
 }
 .search-results__title {
   margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 3.2rem;
+  text-transform: uppercase;
 }
 
 .template-search__header {

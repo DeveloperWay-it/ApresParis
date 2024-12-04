@@ -481,6 +481,8 @@
     
   }
 }
+
+
 @media (min-width: 750px) {
   .product__media-container .slider-buttons {
     display: none;
@@ -504,12 +506,13 @@
   text-transform: uppercase;
   width: 100%;
   font-size: 12px;
+  background-color: black;
 }
 
 @media (min-width: 750px) {
   .product-form__submit  {
     margin-bottom: 1rem;
-    width: fit-content;
+  /*   width: fit-content; */
   }
 }
 
@@ -1525,6 +1528,11 @@
 .product-form__controls-group input:checked:not(.disabled) + label {
   border-color: rgb(var(--color-foreground));
 }
+
+.product-form__controls-group input{
+  
+}
+
 .product-form__controls-group input:checked:not(.disabled) + label:before {
   background-color: rgb(var(--color-button));
 }
@@ -1532,21 +1540,21 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 3.6rem;
-  padding: 0 1.5rem;
-  font-size: 14px;
+  height: 2.5rem;
+  padding: 0 1rem;
+  font-size: 12px;
   color: rgb(var(--color-foreground-title));
   border: 0.1rem solid rgb(var(--color-border-input));
-  background-color: rgb(var(--color-background-input));
-  border-radius: 0.4rem;
+/*   background-color: rgb(var(--color-background-input)); */
+/*   border-radius: 0.4rem; */
   cursor: pointer;
   position: relative;
   transition: var(--duration-default);
 }
 @media (min-width: 750px) {
   .product-form__controls-group label {
-    font-size: 1.6rem;
-    height: 4rem;
+    font-size: 1.4rem;
+    height: 3rem;
   }
 }
 .product-form__group-name {
@@ -1613,7 +1621,7 @@
 }
 @media (min-width: 750px) {
   .product-form__submit {
-    min-height: 5.6rem;
+    min-height: 3.6rem;
     font-size: 1.5rem;
   }
 }
@@ -1653,10 +1661,20 @@
 .about__accordion-item:last-child {
   border-bottom: 0.1rem solid rgb(var(--color-border));
 }
+
+.product_accordion.about__accordion-item {
+  border-top: 0.1rem solid black;
+}
+.product_accordion.about__accordion-item:last-child {
+  border-bottom: 0.1rem solid black;
+}
+
+
 .about__accordion-toggle {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-decoration: none;
   margin: 0;
   padding: 1.7rem 0;
   position: relative;
@@ -1664,6 +1682,10 @@
   font-size: 1.5rem;
   color: rgb(var(--color-foreground-title));
 }
+.product_accordion .about__accordion-toggle {
+  text-transform: uppercase;
+}
+
 @media (min-width: 750px) {
   .about__accordion-toggle {
     padding: 2rem 0;
@@ -1911,7 +1933,7 @@
   z-index: 2;
   height: 100%;
   width: 100%;
-  cursor: url('data:image/svg+xml,<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.9996 9.60001L23.9996 38.4M38.3996 24L9.59961 24" stroke="%23282828" stroke-width="2" stroke-linecap="round"/></svg>') 20 20, auto;
+  cursor: pointer;
 }
 
 .product-media-modal {

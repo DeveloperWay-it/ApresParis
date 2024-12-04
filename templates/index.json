@@ -1,107 +1,30 @@
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "sections": {
-    "popular_products_KCGf7D": {
-      "type": "popular-products",
-      "custom_css": [
-        ".h5 {display: none;}",
-        ".price {display: none;}",
-        ".h5 {display: none;}",
-        ".price {display: none;}",
-        ".card-information {display: none;}",
-        "img {width: 400px;}"
-      ],
+    "homepage_collection_product_grid_qFE9Ay": {
+      "type": "homepage-collection-product-grid",
       "settings": {
-        "subheading": "",
-        "heading": "",
-        "heading_size": "h2",
-        "product_list": [
-          "5-pockets-large-jeans",
-          "anthracite-cotton-t-shirt",
-          "anthracite-polyester-outfit",
-          "beige-cotton-drawstring-skirt",
-          "beige-cotton-drawstring-trousers",
-          "beige-cotton-large-dress",
-          "beige-cotton-trousers",
-          "beige-cotton-outfit-1",
-          "beige-doubble-pochette",
-          "beige-sandals",
-          "beige-leather-slippers",
-          "beige-linen-cotton-jacket",
-          "beige-linen-dress",
-          "beige-plisse-tunic",
-          "beige-plaid-cotton-shirt",
-          "beige-rayon-trousers",
-          "beige-wool-cardigan",
-          "beige-wool-cotton-sweater",
-          "black-cotton-blend-tunic",
-          "big-straw-bag",
-          "black-cotton-drawstring-skirt",
-          "black-cotton-shirt-with-bag",
-          "black-crossbody-bag",
-          "black-cutout-sweater",
-          "black-cupro-trousers",
-          "black-green-cream-cardigan",
-          "black-doubble-pochette",
-          "black-leather-sandals",
-          "black-leather-slippers",
-          "black-linen-blend-tunic",
-          "black-linen-cotton-trousers",
-          "black-jacket",
-          "black-nylon-big-bag",
-          "black-nylon-bag",
-          "black-paillettes-skirt",
-          "black-pinstripe-cotton-jacket",
-          "black-pinstripe-jacket",
-          "black-pinstripe-polyester-dress",
-          "black-pinstriped-divided-trousers",
-          "black-plisse-skirt",
-          "black-plisse-bag",
-          "black-plisse-outfit",
-          "black-polo",
-          "black-polyamide-trousers",
-          "black-polyester-drill-dress",
-          "black-polyester-sack-dress",
-          "black-polyester-sweater",
-          "black-polyester-wool-waistcoat",
-          "white-rectangular-bag-1",
-          "black-ribbed-cardigan"
-        ],
-        "products_to_show": 4,
+        "collection": "shop-1",
+        "products_per_page": 45,
         "image_ratio": "portrait",
         "image_fit": "cover",
         "show_secondary_image": true,
+        "show_product_info": false,
         "show_vendor": false,
         "show_collection": false,
         "show_desc": false,
-        "columns_mobile": "2",
-        "button_show": false,
-        "button_label": "Butto",
-        "button_style": "primary",
-        "button_link": "",
-        "padding_top": "m",
+        "enable_filtering": false,
+        "filter_type": "vertical",
+        "default_open": false,
+        "enable_sorting": false,
+        "image_filter_ratio": "4\/5",
+        "image_filter_fit": "cover",
+        "image_filter_columns": 4,
+        "padding_top": "s",
         "padding_bottom": "m"
       }
     }
   },
   "order": [
-    "popular_products_KCGf7D"
+    "homepage_collection_product_grid_qFE9Ay"
   ]
 }

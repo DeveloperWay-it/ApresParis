@@ -39,7 +39,7 @@
 	assign search_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by -%}
 	
 <div class="section-{{ section.id }}-padding template-search {% if search.performed == true and search.results_count == 0 and terms != blank %} template-search--empty {% endif %}">
-	<div class="template-search__header">
+	{% comment %} <div class="template-search__header">
 		<div class="container">
 		<div class="page-header">
 			<div class="page-header__inner">
@@ -67,6 +67,7 @@
 							<input
 									class="search__input field__input" 
 									id="Search-In-Template" 
+									autocomplete="off"
 									type="search" 
 									name="q" 
 									value="{{ search.terms | escape }}" 
@@ -118,7 +119,7 @@
 
 		</div>
 	</div>
-	</div>
+	</div> {% endcomment %}
 	{%- if search.performed and search.results_count > 0 -%}
 		{% liquid
 			assign filter_show = false

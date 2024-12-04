@@ -2,6 +2,11 @@
   display: block;
   overflow: hidden;
 }
+
+.product-recommendations .media{
+  padding-bottom: 0 !important;
+}
+
 .product-recommendations__list {
   margin-top: 2.4rem;
   position: relative;
@@ -54,6 +59,10 @@
 }
 .product-recommendations__heading {
   margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 3.2rem;
+  text-transform: uppercase;
 }
 .product-recommendations .grid__item {
   padding-bottom: 0;
@@ -65,6 +74,7 @@
   width: 1.6rem !important;
   height: 1.6rem !important;
 }
+
 .product-recommendations .product-form__controls-group label.color-swatch:after {
   width: 1rem !important;
   height: 1rem !important;
@@ -78,6 +88,11 @@
   }
 }
 @media screen and (max-width: 575px) {
+
+  .product-recommendations__list--2-mobile .collection-product-card .card {
+    height: auto;
+  }
+
   .product-recommendations__list--2-mobile .collection-product-card .card-information__group {
     flex-direction: column;
     row-gap: 0.8rem;

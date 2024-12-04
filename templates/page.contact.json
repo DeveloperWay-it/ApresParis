@@ -1,1 +1,44 @@
-{"sections":{"main":{"type":"main-page","settings":{}},"form":{"type":"contact-form","settings":{"heading":"Contact form","text":"Some text for your contact form. You can use multiple lines of text."}}},"order":["main","form"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "custom_css": [
+        "textarea, input {background: #fff;}",
+        ".button{background: #000; color: #fff}"
+      ],
+      "settings": {
+        "position": "right",
+        "heading": "Contact form",
+        "heading_size": "h3",
+        "text": "",
+        "additional_text": "",
+        "button_style": "tertiary",
+        "image": "shopify://shop_images/contact_800x800_77a4d4e3-ab39-4314-9d37-3df26f0c1f04.jpg",
+        "overlay_opacity": 0,
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "form"
+  ]
+}

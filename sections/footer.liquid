@@ -17,7 +17,7 @@
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'link_list' -%}
-                {%- if block.type == 'link_list' and block.settings.heading != blank -%}
+                {% comment %} {%- if block.type == 'link_list' -%}
                   <div class="accordion">
                     <details
                       {% if block.settings.default_open %}
@@ -46,10 +46,10 @@
                       {%- endif -%}
                     </details>
                   </div>
-                {%- endif -%}
+                {%- endif -%} {% endcomment %}
 
                 <div
-                  class="footer-block {% if block.type == 'link_list' and block.settings.heading != blank %}footer-block--menu{% endif %}"
+                  class="footer-block {% if block.type == 'link_list'%}footer-block--menu{% endif %}"
                   {{ block.shopify_attributes }}
                 >
                   {%- if block.settings.heading != blank -%}
@@ -58,7 +58,7 @@
                     </h2>
                   {%- endif -%}
 
-                  {%- if block.settings.menu != blank and block.settings.heading != blank -%}
+                  {%- if block.settings.menu != blank -%}
                     <ul class="footer-block__details-content list-unstyled">
                       {%- for link in block.settings.menu.links -%}
                         <li>
@@ -70,9 +70,18 @@
                           </a>
                         </li>
                       {%- endfor -%}
+                      <li>
+                          <div
+                            class="list-menu__item list-menu__item--link list-menu__item focus-inset"
+                          >
+                          {{ block.settings.company_info }}
+                          </div>
+                        </li>
                     </ul>
                   {%- endif -%}
                 </div>
+
+
               {%- when 'logo_info' -%}
                 <div
                   class="footer-block footer-block--logo"
@@ -225,16 +234,15 @@
         </div>
       </div>
     {%- endif -%}
-  </div>
 
   {%- if section.settings.enable_country_selector
     or section.settings.enable_language_selector
     or section.settings.payment_enable
     or section.settings.show_social
   -%}
-    <div class="footer__content-middle">
+    {% comment %} <div class="footer__content-middle"> {% endcomment %}
       <div class="container">
-        <div class="footer__content-middle-container">
+        {% comment %} <div class="footer__content-middle-container"> {% endcomment %}
           <div class="footer__content-middle-main">
             {%- if section.settings.enable_country_selector or section.settings.enable_language_selector -%}
               <div
@@ -439,13 +447,24 @@
             {%- endif -%}
             {%- if section.settings.show_social -%}
               <div class="footer__column footer__column--social">
-                <span class="label">
-                  {{- 'sections.footer.social_placeholder' | t -}}
-                </span>
                 <ul
                   class="footer__list-social list-unstyled list-social"
                   role="list"
                 >
+                  <li class="list-social__item">
+                    <a
+                      href="newsletter"
+                      {% if settings.new_tab %}
+                        target="_blank"
+                      {% endif %}
+                      class="list-menu__item list-menu__item--link focus-inset"
+                      aria-describedby="a11y-external-message"
+                    >
+                      <span class="newsletter">
+                        NEWSLETTER
+                      </span>
+                    </a>
+                  </li>
                   {%- if settings.social_twitter_link != blank -%}
                     <li class="list-social__item">
                       <a
@@ -603,9 +622,9 @@
               </div>
             {%- endif -%}
           </div>
-        </div>
+        {% comment %} </div> {% endcomment %}
       </div>
-    </div>
+    {% comment %} </div> {% endcomment %}
   {% endif %}
 
   <div class="footer__content-bottom">
@@ -651,6 +670,8 @@
       </div>
     </div>
   </div>
+    </div>
+
 </footer>
 
 {% javascript %}
@@ -735,6 +756,12 @@
           "id": "default_open",
           "default": false,
           "label": "t:sections.footer.blocks.link_list.settings.default_open.label"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "company_info",
+          "default": "Description",
+          "label": "t:sections.all.text.label"
         }
       ]
     },

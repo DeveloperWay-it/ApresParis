@@ -405,7 +405,6 @@
     <a class="skip-to-content-link button button--primary visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
-
     {% sections 'header-group' %}
     {% sections 'overlay-group' %}
     {% if settings.show_breadcrumbs %}
@@ -470,5 +469,12 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     <script src="{{ 'instagram-collage.js' | asset_url }}" defer="defer"></script>
+
+    {% if request.page_type == 'product' %}
+      {% if product.options contains 'Taglia' %}
+          {% render 'size-chart' %}
+      {% endif %}
+  {% endif %}
+
   </body>
 </html>

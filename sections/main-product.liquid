@@ -474,22 +474,27 @@
 								{%- when 'dropdown_information' -%}
 									<div class="about">
 										<div class="about__accordion-item" {{ block.shopify_attributes }}>
+											{%- if block.settings.accordion_type == "link" -%}
+												<a href={{ block.settings.button_link }} class="about__accordion-toggle">
+													<span>{{ block.settings.heading | escape }}</span>
+												</a>
+												{%- elsif block.settings.accordion_type == "size_chart" -%}
+												<a class="about__accordion-toggle trigger-pop-up btn">
+													<span>{{ block.settings.heading | escape }}</span>
+												</a>
+												{% else %}
 											<div class="about__accordion-toggle">
 												<span>{{ block.settings.heading | escape }}</span>
-												<div class="about__accordion-toggle-icon">
-													{% render 'icon-button-arrow' %}
-												</div>
 											</div>
+
 											<div class="about__accordion-description">
 												{% if block.settings.characteristics %}
-													{%- if product.metafields.characteristics.name.value.size > 0 -%}
-														{%- for item in product.metafields.characteristics.name.value -%}
+													
 															<div class="about__row">
-																<span>{{ item }}</span>
-																<span>{{ product.metafields.characteristics.description.value[forloop.index0] }}</span>
+															
+																<span>{{ product.metafields["c_f "]["composition"].value }}</span>
 															</div>
-														{% endfor %}
-													{% endif %}
+													
 												{% else %}
 													{% if block.settings.description != blank %}
 														{{ block.settings.description }}
@@ -510,6 +515,7 @@
 													{%- endif -%}
 												{% endif %}
 											</div>
+											{%- endif -%}
 										</div>
 									</div>
 		
@@ -1423,23 +1429,28 @@
 	
 							{%- when 'dropdown_information' -%}
 								<div class="about">
-									<div class="about__accordion-item" {{ block.shopify_attributes }}>
+									<div class="product_accordion about__accordion-item" {{ block.shopify_attributes }}>
+										{%- if block.settings.accordion_type == "link" -%}
+										<a href="{{ block.settings.button_link }}" class="about__accordion-toggle">
+											<span>{{ block.settings.heading | escape }}</span>
+										</a>
+										{%-  elsif block.settings.accordion_type == "size_chart" -%}
+											{% comment %} MODAL {% endcomment %}
+										<a class="about__accordion-toggle trigger-pop-up btn">
+											<span>{{ block.settings.heading | escape }}</span>
+										</a>
+										{% else %}
 										<div class="about__accordion-toggle">
 											<span>{{ block.settings.heading | escape }}</span>
-											<div class="about__accordion-toggle-icon">
-												{% render 'icon-button-arrow' %}
-											</div>
 										</div>
 										<div class="about__accordion-description">
 											{% if block.settings.characteristics %}
-												{%- if product.metafields.characteristics.name.value.size > 0 -%}
-													{%- for item in product.metafields.characteristics.name.value -%}
+												
 														<div class="about__row">
-															<span>{{ item }}</span>
-															<span>{{ product.metafields.characteristics.description.value[forloop.index0] }}</span>
+															<span>{{  product.metafields["c_f "]["composition"].value }}</span>
 														</div>
-													{% endfor %}
-												{% endif %}
+												
+											
 											{% else %}
 												{% if block.settings.description != blank %}
 													{{ block.settings.description }}
@@ -1460,6 +1471,7 @@
 												{%- endif -%}
 											{% endif %}
 										</div>
+										{%- endif -%}
 									</div>
 								</div>
 	
@@ -3220,6 +3232,26 @@ customElements.define('product-modal', ProductModal);
 			"name": "t:sections.main-product.blocks.dropdown_information.name",
 			"limit": 6,
 			"settings": [
+				{
+					"type": "select",
+					"label": "Accordion type",
+					"id": "accordion_type",
+					"options": [
+						{
+							"value": "description",
+							"label": "Description"
+						},
+						{
+							"value": "link",
+							"label": "Link"
+						},
+						{
+							"value": "size_chart",
+							"label": "Size Chart"
+						}
+					],
+					"info": "If Link is selected, use the Button link setting below."
+				},
 				{
 					"type": "checkbox",
 					"id": "characteristics",

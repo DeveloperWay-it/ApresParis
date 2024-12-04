@@ -77,7 +77,16 @@
                   show_desc: section.settings.show_desc,
                   section_id: section.id
                 %}
+                {% if section.settings.show_product_info == true %}
+                  <div class="product-info">  
+                    <p class="collection-title">{{ product.vendor }}</p>                
+                    <p class="product-title">{{ product.title }}</p>  
+                    <p class="product-price">{{ product.price | money }}</p>  
+                   
+                  </div>
+                  {% endif %}
               </div>
+              
             {% endfor %}
           </div>
 
@@ -195,6 +204,12 @@
       "default": false,
       "label": "t:sections.all.card.show_secondary_image.label"
     },
+    {
+			"type": "checkbox",
+			"id": "show_product_info",
+			"default": true,
+			"label": "Show product info (price name and description)"
+		},
     {
       "type": "checkbox",
       "id": "show_vendor",
