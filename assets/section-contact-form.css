@@ -92,6 +92,10 @@
     min-width: 14.8rem;
     width: auto;
   }
+.contact-form__bottom .button {
+  min-height:  3.6rem;
+}
+ 
 }
 .contact-form__add-text {
   max-width: 35.5rem;
