@@ -4102,6 +4102,15 @@ details[open] > .header__icon--menu .icon-hamburger {
   display: none;
 }
 
+.menu-drawer__menu.list-menu li:first-child .menu-drawer__menu-item.list-menu__item.link.link--text.focus-inset:first-child {
+  border: none !important;
+}
+
+.page-header, .rte{
+  max-width: 600px!important;
+  margin: auto;
+}
+
 .menu-drawer-container.menu-opening .header__modal-close-button {
   display: flex;
   align-items: center;
