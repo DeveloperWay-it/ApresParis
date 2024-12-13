@@ -26,8 +26,8 @@
       "settings": {
         "enable_border": false,
         "header_type": "left-logo",
-        "logo": "shopify:\/\/shop_images\/01_logo_apres_paris_page-0001.jpg",
-        "logo_width": 135,
+        "logo": "shopify://shop_images/logo_1_683720b2-2928-4071-8434-384419df3a83.png",
+        "logo_width": 150,
         "menu": "main-menu-1",
         "small_menu": "",
         "enable_country_selector": true,
@@ -37,9 +37,7 @@
         "enable_search": true,
         "show_search_promo": false,
         "show_collection_card": true,
-        "collection_list": [
-
-        ],
+        "collection_list": [],
         "show_search_block": false,
         "search_color_scheme": "",
         "search_subheading": "",
