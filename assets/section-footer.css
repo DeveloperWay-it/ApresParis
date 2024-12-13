@@ -442,6 +442,11 @@
   .footer .footer-block--logo + .accordion {
     margin-top: 0;
   }
+  .footer-block {
+    display: block;
+    margin-top: 0.3rem;
+    width: auto;
+  }
 }
 
 /* @media screen and (min-width: 990px) { */
