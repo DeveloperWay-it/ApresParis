@@ -442,11 +442,6 @@
   .footer .footer-block--logo + .accordion {
     margin-top: 0;
   }
-  .footer-block {
-    display: block;
-    margin-top: 0.3rem;
-    width: auto;
-  }
 }
 
 /* @media screen and (min-width: 990px) { */
@@ -456,6 +451,11 @@
   width: 100%;
 }
 /* } */
+ @media screen and (min-width: 990px) { 
+.footer-block {
+  width: auto;
+}
+ }
 .footer-block:empty {
   display: none;
 }
