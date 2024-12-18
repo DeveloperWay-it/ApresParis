@@ -122,6 +122,7 @@
   text-transform: uppercase;
 }
 .collection-hero__description {
+  width: 100%;
   font-size: 14px;
   color: rgb(var(--color-foreground-secondary));
 }
