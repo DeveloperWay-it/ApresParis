@@ -25,6 +25,25 @@
   .section-list-collections .page-header {
     margin-bottom: 4.8rem;
   }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+  main .homepage-collection-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+}
+
+@media screen and (min-width: 1360px) {
+  main .homepage-collection-container {
+    max-width: 1400px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
 }
 
 .collection-wrapper {
@@ -228,7 +247,6 @@
 @media screen and (max-width: 575px) {
   .collection-product-list .collection-product-card .card {
     height: auto;
-    height: 300px;
   }
   .collection-product-list--2-mobile
     .collection-product-card

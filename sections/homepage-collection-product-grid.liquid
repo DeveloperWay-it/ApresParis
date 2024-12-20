@@ -64,7 +64,7 @@
 
 {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
 
-<div class="container section-{{ section.id }}-padding">
+<div class="homepage-collection-container container section-{{ section.id }}-padding">
   <div class="collection-wrapper 
     collection-wrapper--{{ section.settings.filter_type }}
     {%- if collection.all_products_count == 0 -%} collection-wrapper--empty {% endif %}
