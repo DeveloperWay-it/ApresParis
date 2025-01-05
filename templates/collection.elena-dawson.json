@@ -24,7 +24,8 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
-        ".h5 {display: none;}"
+        ".h5 {display: none;}",
+        ".product-price {display: none;}"
       ],
       "settings": {
         "products_per_page": 45,
