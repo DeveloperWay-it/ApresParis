@@ -162,7 +162,7 @@
                   <div class="product-info">  
                     <p class="collection-title">{{ product.vendor }}</p>                
                     <p class="product-title">{{ product.title }}</p>  
-                    <p class="product-price">{{ product.price | money }}</p>  
+                    {% render 'price', product: product, price_class: 'product-price' %}
                    
                   </div>
                   {% endif %}

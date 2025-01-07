@@ -575,8 +575,12 @@
 }
 
 .product-info .product-price {
-  display: block;
-  margin: 0;
-  font-size: 12px;
+  align-items: start;
+  font-size: 12px !important; 
+}
+
+.product-info .product-price .price-item {
+  font-size: 12px !important; 
+
   font-weight: bold;
 }
