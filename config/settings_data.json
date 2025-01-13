@@ -27,6 +27,7 @@
     "type_footer_menu_font": "roboto_n4",
     "type_popups_heading_font": "roboto_n4",
     "type_popups_text_font": "roboto_n4",
+    "card_old_price_color": "#e95144",
     "badge_sale_show": false,
     "badge_soldout_show": false,
     "badge_custom_show": false,
