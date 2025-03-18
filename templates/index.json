@@ -13,7 +13,7 @@
       "type": "homepage-collection-product-grid",
       "settings": {
         "collection": "shop",
-        "products_per_page": 45,
+        "products_per_page": 101,
         "image_ratio": "portrait",
         "image_fit": "cover",
         "show_secondary_image": true,
