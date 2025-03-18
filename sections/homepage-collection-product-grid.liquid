@@ -90,7 +90,7 @@
       {% if section.settings.filter_type != 'vertical' %} full-width {% endif %}
       {% if section.settings.enable_filtering == false %} products-grid_no-filter {%- endif -%}"
     >
-      {%- paginate collection.products by 20000 -%}
+      {%- paginate collection.products by 50 -%}
         {%- if collection.products.size == 0 -%}
           <div
             class="collection collection-product collection--empty container"
