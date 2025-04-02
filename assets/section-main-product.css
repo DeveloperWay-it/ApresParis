@@ -2277,6 +2277,15 @@
   margin: 0 auto; /* Centra il contenitore orizzontalmente */
 }
 
+@media screen and (max-width: 576px) {
+  .product__main{
+    aspect-ratio: 0.7;
+  }
+  .product__media-item img{
+    object-fit: cover !important;
+  }
+}
+
 .product__media-wrapper{
 height: 100%;
 width: 100%;
