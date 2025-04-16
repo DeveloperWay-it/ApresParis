@@ -43,7 +43,7 @@
     "social_vimeo_link": "",
     "favicon": "shopify://shop_images/Nuovo_progetto_-_2025-01-14T101529.322.png",
     "quickview_show": false,
-    "pagination_type": "load_more",
+    "pagination_type": "infinite_scroll",
     "cart_color_scheme": "background-1",
     "cart_button_style": "tertiary",
     "cart_show_vendor": true,
