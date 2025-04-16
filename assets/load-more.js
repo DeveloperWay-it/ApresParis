@@ -3,9 +3,11 @@ const loadItems = (button) => {
   let currentPage = parseInt($('[data-current-page]').val());
   let currentPageScroll = currentPage + 1;
 
+
   currentPage = currentPage+1;
-  const nextUrl = $('[data-next-url]').val().replace(/page=[0-9]+/,'page='+currentPage);
-  const nextUrlScroll = $('[data-next-url]').val().replace(/page=[0-9]+/,'page='+currentPageScroll);
+  const nextUrl = $('[data-next-url]').val().replace(/([?&])page=\d+/, '$1page=' + currentPage)
+  
+  const nextUrlScroll = $('[data-next-url]').val().replace(/([?&])page=\d+/,'$1page='+currentPageScroll);
   $('[data-current-page]').val(currentPage);
 
   button.setAttribute("disabled", "");

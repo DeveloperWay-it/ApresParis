@@ -144,10 +144,10 @@
                 </svg>
               </div>
             </div>
-
+            
             <ul id="product-grid" data-id="{{ section.id }}" class="homepage-grid collection-product-list 
-              collection-product-list--{{ section.settings.columns_mobile }}-mobile load-more-grid">
-              {%- for product in collection.products limit: 2000-%}
+              collection-product-list--{{ section.settings.columns_mobile }}-mobile load-more-grid {% if section.settings.show_product_info == true %} product-info-visible {% endif %}">
+              {%- for product in collection.products limit: 45 -%}
                 <li class="collection-product-card {% if settings.quickview_hover %}quickview--hover{% endif %}">
                   {% render 'product-card',
                     product_card_product: product,
@@ -185,8 +185,9 @@
                   {% render 'pagination', paginate: paginate %}
                 </div>
               {%- elsif settings.pagination_type == 'infinite_scroll' -%}
+                  {%- assign next_url =  paginate.next.url |  remove_first: '/' | prepend: collection.url  -%}
                 {% render 'infinite-scroll',
-                  next_url: paginate.next.url,
+                  next_url: next_url,
                   count_pages: paginate.pages,
                   current_page: paginate.current_page
                 %}

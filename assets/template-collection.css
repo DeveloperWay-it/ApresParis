@@ -584,3 +584,7 @@
 
   font-weight: bold;
 }
+
+.homepage-collection-container .homepage-grid:not(.product-info-visible) .product-info {
+  display: none;
+}
