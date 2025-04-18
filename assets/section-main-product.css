@@ -2313,3 +2313,13 @@ width: 100%;
   width: 100%!important;
   padding: 0!important;
 }
+
+
+@media screen and (max-width: 576px) {
+  .product__main{
+    aspect-ratio: 0.7;
+  }
+  .product__media-item img{
+    object-fit: cover !important;
+  }
+}
