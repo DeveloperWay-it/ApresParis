@@ -24,7 +24,7 @@
         "enable_filtering": false,
         "filter_type": "vertical",
         "default_open": false,
-        "enable_sorting": false,
+        "enable_sorting": true,
         "image_filter_ratio": "4/5",
         "image_filter_fit": "cover",
         "image_filter_columns": 4,
